@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Phi-3 FastAPI Server — Local Dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# IMPORTANT: Install PyTorch FIRST with your CUDA version from:
+#   https://pytorch.org/get-started/locally/
+#
+# Example for CUDA 12.1 (most RTX 30xx/40xx cards):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#
+# Then install the rest:
+#   pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+transformers>=4.44.2
+accelerate>=0.33.0
+sentencepiece
+protobuf
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.0.0
+requests          # only needed for test_api.py
